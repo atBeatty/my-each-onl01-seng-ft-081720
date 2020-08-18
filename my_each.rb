@@ -1,14 +1,9 @@
 def my_each (array)# put argument(s) here
+  i = 0
 
-  counter = 0
-  while counter < array.length
-    yield array[i] do |i|
-      puts i
-    end
-    
-      counter += 1
-
+  while i < array.length
+    yield array[i]
+    i += 1
   end
-
-  # code here
+  
 end
